@@ -1,0 +1,4 @@
+data/training/
+.ipynb_checkpoints/
+classifier.ipynb
+.vs/
