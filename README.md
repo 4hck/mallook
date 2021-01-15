@@ -39,10 +39,7 @@ Please submit an issue on the project's github (https://github.com/fieldsfieldsf
 
 ## Authors
 
-Contributors names and contact info
-
-Matthew Fields
-[fieldsfieldsfields](https://gist.github.com/fieldsfieldsfields)
+[Matthew Fields](https://gist.github.com/fieldsfieldsfields)
 
 ## Version History
 
@@ -55,6 +52,6 @@ This project is licensed under the [Apache License 2.0] License - see the LICENS
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
+Inspiration
 * [Deep Learning with PyTorch](https://www.manning.com/books/deep-learning-with-pytorch)
 * [fast.ai](https://www.fast.ai/)
