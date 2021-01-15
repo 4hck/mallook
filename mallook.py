@@ -35,6 +35,7 @@ def exeToImg(input_folder='data/input',output_folder='data/output',interpolation
                 size = findNearestUnder(byte_array.size,size_list)
                 pic = np.reshape(byte_array[:size[0]],(size[1],size[1],3))
 
+                #Append characteristics to a log file called data.csv
                 with open(os.path.join(output_folder,'data.csv'),'a') as f:
                     f.write("\n{},{},{},{},{},{},{},{}".format(filename,datetime.datetime.now(),interpolation,\
                         dpi,byte_array.size,size[0],byte_array.size-size[0],(byte_array.size-size[0])/byte_array.size))
@@ -55,12 +56,13 @@ def exeToImg(input_folder='data/input',output_folder='data/output',interpolation
             print("Done with this file.")
             plt.clf()
 
-interps = ['lanczos']
-dpis = [600]
-input_folder = 'C:\project_input'
+#Set interpolation, dpi, input location, and output location
+interps = ['nearest','lanczos']
+dpis = [120,300,600,1200]
 
+#Loop through the options chosen above to create image files
 for interp in interps:
     for dpi in dpis:
-        exeToImg(input_folder=input_folder,interpolation=interp,dpi=dpi)
+        exeToImg(interpolation=interp,dpi=dpi)
 
 print("Done with all files.")
