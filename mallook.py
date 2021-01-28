@@ -5,7 +5,7 @@ import pickle
 import os
 
 #Make a list of possible sizes if not yet in the project folder
-if (not os.path.exists("./sizes.pkl")):
+if not os.path.exists("./sizes.pkl"):
     sizes = []
     for i in range(1,1_000_000):
         size = (i**2)*3
