@@ -4,6 +4,15 @@ import datetime
 import pickle
 import os
 
+#Make a list of possible sizes if not yet in the project folder
+if (not os.path.exists("./sizes.pkl")):
+    sizes = []
+    for i in range(1,1_000_000):
+        size = (i**2)*3
+        sizes.append(size)
+    with open("sizes.pkl","wb") as f:
+        pickle.dump(sizes,f)
+
 #Load the list of possible square image sizes for files up to 3TB, for passing into findNearestUnder
 with open("sizes.pkl","rb") as f:
     size_list = pickle.load(f)

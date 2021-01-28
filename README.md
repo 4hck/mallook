@@ -39,7 +39,7 @@ Please submit an issue on the project's github (https://github.com/fieldsfieldsf
 
 ## Authors
 
-[Matthew Fields](https://gist.github.com/fieldsfieldsfields)
+[Matthew Fields](https://github.com/fieldsfieldsfields)
 
 ## Version History
 
